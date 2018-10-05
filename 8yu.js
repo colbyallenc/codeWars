@@ -30,10 +30,8 @@
             }
             return false
             }
-       
-
+    
         // or
-
     
             var find = function(string, array) {
                 return (array.includes(string))? true : false
@@ -45,7 +43,7 @@
 
     
 //  Find the greatest corresponding sequence of 5 digit interger in given number
-//  Complete the solution so that it returns the largest five digit number found within the number given.. The number will be passed in as a string of only digits. It should return a five digit integer. The number passed may be as large as 1000 digits.
+//  My task was to complete the solution so that it returns the largest five digit number found within the number given.. The number will be passed in as a string of only digits. It should return a five digit integer. The number passed may be as large as 1000 digits.
 
         function solution(digits){
             var temp = String(digits);
@@ -73,8 +71,8 @@
 // ******************************************************************************************** -->
 
 
-// Triangular numbers are so called because of the equilateral triangular 
-// shape that they occupy when laid out as dots. i.e. Return the nth triangular number
+// Triangular numbers are so called because of the equilateral triangular shape that they occupy when laid out as dots. i.e. 
+// My task was to return the nth triangular number
 
         function triangular( n ) {
         

@@ -77,15 +77,25 @@
         function triangular( n ) {
         
             var sum = 0;
-
+            //define a sum and start it at 0
             if (n <= 0) {
                 return 0;
             } else {
-                for (i = n; i > 0; i--) {
+                for (var i = n; i > 0; i--) {
                     sum += i
                 }
             }
             return sum;
         }
-
+ triangular(5)
 // ******************************************************************************************** -->
+// Can you find the needle in the haystack?
+// My task was to write a function findNeedle() that takes an array full of junk but containing one "needle"
+// After your function finds the needle it should return a message (as a string) that says:
+// "found the needle at position " plus the index it found the needle.
+
+function findNeedle(haystack) {
+    return haystack.includes('needle')?  `needle found at position ${haystack.indexOf('needle')}`: null
+   }
+   
+   findNeedle("can you find the needle");

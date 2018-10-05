@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CodeWars</title>
+</head>
+<body>
+
+    <!-- ******************************************************************************************** -->
+
+<h2>Find Maximum and Minimum Values of a List</h2>
+    <p>My task was to make two functions, max and min (maximum and minimum in PHP) that take a(n) array/vector of integers list as input and outputs, respectively, the largest and lowest number in that array/vector.</p>
+        <script>
+            var min = function(list){
+                return Math.min(...list)
+            }
+
+            min([9,2,6,4])
+
+            var max = function(list){
+                return Math.max(...list)
+            }
+
+            max([9,2,5,3])
+        </script>
+
+<!-- ******************************************************************************************** -->
+
+
+ <h2> Find something in an Array</h2>
+    <p>My task was to create a find function that takes a string and an array as arguments. If the string is in the array, return true.</p>
+        <script>
+            var find = function(string,array){
+                var i = string.length
+            while (i--){
+                if (a[i]===array){
+                return true;
+                }
+            }
+            return false
+            }
+        </script>
+
+        <p>or</p>
+
+        <script>
+            var find = function(string, array) {
+                return (array.includes(string))? true : false
+
+            };
+        </script>
+<!-- ******************************************************************************************** -->
+
+    
+<h2> Find the greatest corresponding sequence of 5 digit interger in given number</h2>
+    <p> Complete the solution so that it returns the largest five digit number found within the number given.. The number will be passed in as a string of only digits. It should return a five digit integer. The number passed may be as large as 1000 digits.</p>
+
+    <script>
+        function solution(digits){
+            var temp = String(digits);
+            var greatest = parseInt(temp.slice(0,5));
+    
+            for (var i = 0;i<temp.length;i++){
+
+            if(temp.slice(i, i+5) > greatest){ 
+                greatest = parseInt(temp.slice(i,i+5))
+                //for every index, i can join it with the next 4 characters
+            //then i can convert it to an integer
+            //and compare it to the previously stored largest number (0 if first index)
+            //if the current is greater, assign the value to the largest number variable
+            //else the variable retains the same value and we move onto the next index
+            }
+            }
+            return greatest 
+        }
+  
+        solution(1234567890);
+  </script>
+
+<!-- ******************************************************************************************** -->
+
+
+<h2>Triangular numbers are so called because of the equilateral triangular </h2> 
+    <p>shape that they occupy when laid out as dots. i.e. Return the nth triangular number</p>
+
+    <script>
+        function triangular( n ) {
+        
+            var sum = 0;
+
+            if (n <= 0) {
+                return 0;
+            } else {
+                for (i = n; i > 0; i--) {
+                    sum += i
+                }
+            }
+            return sum;
+        }
+    </script>
+<!-- ******************************************************************************************** -->
+
+
+
+</body>
+</html>

@@ -1,9 +1,7 @@
 
-    <!-- ******************************************************************************************** -->
-
-<h2>Find Maximum and Minimum Values of a List</h2>
-    <p>My task was to make two functions, max and min (maximum and minimum in PHP) that take a(n) array/vector of integers list as input and outputs, respectively, the largest and lowest number in that array/vector.</p>
-        <script>
+// Find Maximum and Minimum Values of a List
+// My task was to make two functions, max and min (maximum and minimum in PHP) that take a(n) array/vector of integers list as input and outputs, respectively, the largest and lowest number in that array/vector.
+      
             var min = function(list){
                 return Math.min(...list)
             }
@@ -15,14 +13,14 @@
             }
             //find the max of array list
             max([9,2,5,3])
-        </script>
+      
 
-<!-- ******************************************************************************************** -->
+// ******************************************************************************************** -->
 
 
- <h2> Find something in an Array</h2>
-    <p>My task was to create a find function that takes a string and an array as arguments. If the string is in the array, return true.</p>
-        <script>
+// Find something in an Array
+// My task was to create a find function that takes a string and an array as arguments. If the string is in the array, return true.
+       
             var find = function(string,array){
                 var i = string.length
             while (i--){
@@ -32,24 +30,23 @@
             }
             return false
             }
-        </script>
+       
 
-        <p>or</p>
+        // or
 
-        <script>
+    
             var find = function(string, array) {
                 return (array.includes(string))? true : false
                 //ternary operator -- condition? value if true:value of false
              // The includes method determines whether an array contains a specified element
             };
-        </script>
-<!-- ******************************************************************************************** -->
+
+// <!-- ******************************************************************************************** -->
 
     
-<h2> Find the greatest corresponding sequence of 5 digit interger in given number</h2>
-    <p> Complete the solution so that it returns the largest five digit number found within the number given.. The number will be passed in as a string of only digits. It should return a five digit integer. The number passed may be as large as 1000 digits.</p>
+//  Find the greatest corresponding sequence of 5 digit interger in given number
+//  Complete the solution so that it returns the largest five digit number found within the number given.. The number will be passed in as a string of only digits. It should return a five digit integer. The number passed may be as large as 1000 digits.
 
-    <script>
         function solution(digits){
             var temp = String(digits);
             //save the inserted value as a string
@@ -71,15 +68,14 @@
         }
 
         solution(1234567890);
-  </script>
-
-<!-- ******************************************************************************************** -->
 
 
-<h2>Triangular numbers are so called because of the equilateral triangular </h2> 
-    <p>shape that they occupy when laid out as dots. i.e. Return the nth triangular number</p>
+// ******************************************************************************************** -->
 
-    <script>
+
+// Triangular numbers are so called because of the equilateral triangular 
+// shape that they occupy when laid out as dots. i.e. Return the nth triangular number
+
         function triangular( n ) {
         
             var sum = 0;
@@ -93,10 +89,5 @@
             }
             return sum;
         }
-    </script>
-<!-- ******************************************************************************************** -->
 
-
-
-</body>
-</html>
+// ******************************************************************************************** -->

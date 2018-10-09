@@ -99,3 +99,55 @@ function findNeedle(haystack) {
    }
    
    findNeedle("can you find the needle");
+
+// ******************************************************************************************** -->
+// Given two integers, which can be positive and negative, find the sum of all the numbers between including them too and return it. If both numbers are equal return a or b.
+
+// Note! a and b are not ordered!
+
+// Example: 
+// GetSum(1, 0) == 1   // 1 + 0 = 1
+// GetSum(1, 2) == 3   // 1 + 2 = 3
+// GetSum(0, 1) == 1   // 0 + 1 = 1
+// GetSum(1, 1) == 1   // 1 Since both are same
+// GetSum(-1, 0) == -1 // -1 + 0 = -1
+// GetSum(-1, 2) == 2  // -1 + 0 + 1 + 2 = 2
+// Waiting for the Feedback! Thanks!
+
+
+// I initially wrote this but realized that it doesn't check to see if b is less than a
+function GetSum( a,b ){
+    var sum = 0;
+    while(a !== b){
+       for(var a; a <=b ; a++){
+       sum += a
+       }
+       return sum
+    }
+    return a
+    }
+    
+    GetSum(2,2)
+
+// below is the correct solution 
+
+function GetSum(a,b){
+  var sum = 0;
+  if(a === b){
+    return a;
+  } else if(a < b){  
+    for(a; a <= b; a++){
+      sum += a;
+    }
+  } else if(b < a){
+    for(b; b <= a; b++){
+      sum += b;
+    }  
+  }
+  return sum;
+}
+
+GetSum(0,-1);
+
+
+

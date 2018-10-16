@@ -74,3 +74,28 @@ iqTest("2 4 3 6") // => 3 // Third number is odd, while the rest of the numbers 
 
 iqTest("1 2 1 1") // => 2 // Second number is even, while the rest of the numbers are odd
 
+// _____________________________________________________________________________
+
+
+// Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+
+// It should remove all values from list a, which are present in list b.
+
+// array_diff([1,2],[1]) == [2]
+// If a value is present in b, all of its occurrences must be removed from the other:
+
+// array_diff([1,2,2,2,3],[2]) == [1,3]
+
+
+
+function array_diff(a, b) {
+  const newArr=[];
+  
+  for(var i=0; i < a.length; i++){
+    let currElem = a[i];
+      if(b.indexOf(currElem) === -1){
+        newArr.push(currElem)
+      }
+     } 
+  return newArr
+ }

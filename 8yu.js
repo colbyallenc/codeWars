@@ -21,15 +21,15 @@
 // Find something in an Array
 // My task was to create a find function that takes a string and an array as arguments. If the string is in the array, return true.
        
-            var find = function(string,array){
-                var i = string.length
-            while (i--){
-                if (string[i]===array){
-                return true;
-                }
-            }
-            return false
-            }
+            // var find = function(string,array){
+            //     var i = string.length
+            // while (i--){
+            //     if (string[i]===array){
+            //     return true;
+            //     }
+            // }
+            // return false
+            // }
     
         // or
     
@@ -148,6 +148,20 @@ function GetSum(a,b){
 }
 
 GetSum(0,-1);
+
+// ******************************************************************************************** -->
+
+// Given a number n, return the number of positive odd numbers below n, EASY!
+
+function oddCount(n){
+    var oddNumbers =[];
+    for(var i=0; i<n; i++){
+      if(i%2){
+        oddNumbers.push(i)
+      };
+    };
+    return oddNumbers.length
+  };
 
 // ******************************************************************************************** -->
 

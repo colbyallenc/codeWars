@@ -103,3 +103,68 @@ function pickPeaks(arr) {
   }
   
   pickPeaks([1,2,3,4,5,4,3,2,4,5,6,3,2]);
+
+//   ________________________________________________________
+
+//Count the number of Duplicates
+/*
+Write a function that will return the count of distinct case-insensitive alphabetic characters and numeric digits that occur more than once in the input string. The input string can be assumed to contain only alphanumeric characters, including digits, uppercase and lowercase alphabets.
+
+Example:
+"abcde" -> 0 # no characters repeats more than once
+"aabbcde" -> 2 # 'a' and 'b'
+"aabbcdeB" -> 2 # 'a' and 'b'
+"indivisibility" -> 1 # 'i'
+"Indivisibilities" -> 2 # 'i' and 's'
+"aa11" -> 2 # 'a' and '1'
+*/
+
+function duplicateCount(text){
+    var arr = text.toLowerCase().split(''); 
+    
+    var newArr = arr.filter(function(a, b) {
+      return arr.indexOf(a) !== b;
+    });
+    
+    return newArr.filter(function(item, pos) {
+      return newArr.indexOf(item) == pos;
+    }).length;
+  }
+
+
+//   _________________________________________________________
+
+// Simple Pig Latin
+
+// Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.
+
+function pigLatin(str){
+    var words = str.split(' ')
+    var backward = words.map(function(word){
+          return word.substr(1) + word.charAt(0) + 'ay'
+    })
+    return backward.join(' ')
+  }
+  
+// ___________________________________________________________
+// Two Sums
+
+function twoSums(numbers, target){
+    let sets = [];
+ 
+    for(var i=0; i < numbers.length-1; i++ ){
+      for(var j=i+1; j < numbers.length; j++){
+        let a = numbers[i];
+        let b = numbers[j];
+       //  console.log([a,b]);
+        let ind =[i,j];
+        if (a+b === target && sets.indexOf(ind)=== -1 ){
+          sets.push(ind) 
+         }
+     }
+    }
+    return sets
+ }
+ 
+ twoSums([2,4,7,4, 8,5,3,1], 9)
+

@@ -110,3 +110,22 @@ reverseWords("This is an example!"); // returns "sihT si na !elpmaxe" reverseWor
 function reverseWords(str) {
   return  str.split('').reverse().join('').split(' ').reverse().join(' ')
 }
+
+
+// _________________________________________________________
+// Combine and sort Two arrays
+
+
+function sorted(num1, num2){
+  let store = []
+  let a = num1.toString().split(',');
+  let b = num2.toString().split(',');
+
+  let concat = a.concat(b).sort().join(',')
+  store.push(concat)
+
+  return store
+
+}
+
+sorted([1,2,4], [3,5,6])

@@ -129,3 +129,38 @@ function sorted(num1, num2){
 }
 
 sorted([1,2,4], [3,5,6])
+
+
+// ____________________________________________________________-
+
+// Climb stairs
+
+
+//  var climbStairs = function(n) {
+//      if(n === 0) return 0;
+//     if(n === 1) return 1;
+//      if(n === 2) return 2;
+//     var climb = [0, 1, 2];
+//     for(var i = 3; i <= n; i++)
+//          climb[i] = climb[i - 1] + climb[i - 2];
+//      return climb[n];
+// };
+
+// climbStairs(5)
+
+/**
+ * @param {number} n
+ * @return {number}
+ */
+/**
+ * Dynamic Programming - Memorized Recursive Version
+ */
+var W = [0, 1, 2];
+
+var climbStairs = function(n) {
+    if (W[n] === undefined){
+        W[n] = climbStairs(n - 2) + climbStairs(n - 1);
+    }
+
+    return W[n];
+};

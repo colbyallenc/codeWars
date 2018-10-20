@@ -71,7 +71,7 @@ function isPangram(string){
 
 function chocolate(n,m){
   let result = (n-1)+(m-1);
-  if(result < 0 || undefined){
+  if(result < 0){
     return 0
   }
   return result

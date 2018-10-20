@@ -57,13 +57,13 @@ function isPangram(string){
 
 // If input data is invalid you should return 0 (as in no breaks are needed if we do not have any chocolate to split). Input will always be a non-negative integer.
 
-// here you can see that the result would equal (n - 1)(m[i])
-// n=position m=index
 // 1x1 = 0  2x1 = 1   3x1 = 2
 // 1x2 = 1  2x2 = 2   3x2 = 3
 // 1x3 = 2  2x3 = 3   3x3 = 4
 // 1x4 = 3  2x4 = 4   3x4 = 5
 // 1x5 = 4  2x5 = 5   3x5 = 6
+
+// here you can see that the result would equal (n - 1)(m-1)
 
 // 2x6 :
 // (n-1)+(m-1) = (2-1)+(6-1) = 6

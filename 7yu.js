@@ -63,6 +63,7 @@ function isPangram(string){
 // 1x4 = 3  2x4 = 4   3x4 = 5
 // 1x5 = 4  2x5 = 5   3x5 = 6
 
+// we notice that by drawing out this figure, we can see that each side takes one less number of cuts
 // here you can see that the result would equal (n - 1)(m-1)
 
 // 2x6 :

@@ -83,3 +83,23 @@ chocolate(0,1);
 // chocolate(2,2);
 // chocolate(1,4);
 // chocolate(2,5);
+
+
+// the solution above is incorrect..
+// and this is why...
+// if youre actually breaking a piece of chocolate, once you break down that main piece, the smaller pieces cannot be broken all at once. 
+function chocolate(n,m){
+  let result = (n*m)-1;
+  if(result <= 0){
+    return 0
+  }
+  return result
+}
+
+// chocolate(2,2);
+chocolate(0,1);
+// chocolate(2,2);
+// chocolate(1,4);
+// chocolate(2,5);
+
+// this is the correct solution
